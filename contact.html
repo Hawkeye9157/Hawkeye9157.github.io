@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Clint Sipes</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Clint Sipes</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <p class="section-sub">// Comms Array Online</p>
+      <h1 class="section-heading">Open Channel</h1>
+    </div>
+  </div>
+
+  <!-- Contact Terminal -->
+  <section>
+    <div class="container">
+      <div class="terminal-panel">
+
+        <div class="terminal-titlebar">
+          <i class="fa-solid fa-satellite-dish" aria-hidden="true"></i>
+          TRANSMISSION TERMINAL — CONTACT
+        </div>
+
+        <div class="terminal-body">
+
+          <ul class="contact-list">
+
+            <!-- Email -->
+            <li>
+              <a href="mailto:[ EMAIL ]" class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">csipes05@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--text-muted);margin-left:auto;font-size:0.75rem;" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li>
+              <a href="https://www.linkedin.com/in/clint-sipes-03200123a/" target="_blank" rel="noopener" class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">Clint Sipes</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--text-muted);margin-left:auto;font-size:0.75rem;" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a href="https://github.com/Hawkeye9157" target="_blank" rel="noopener" class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-meta">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">Hawkeye9157</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color:var(--text-muted);margin-left:auto;font-size:0.75rem;" aria-hidden="true"></i>
+              </a>
+            </li>
+
+          </ul>
+
+          <p class="closing-msg">
+            Always open to new projects, collaborations, and opportunities.
+            Whether you have a role in mind or just want to talk games — feel free to reach out.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="mailto:[ csipes05@gmail.com ]"><i class="fa-solid fa-envelope"></i> EMAIL</a></li>
+      <li><a href="https://www.linkedin.com/in/clint-sipes-03200123a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/Hawkeye9157" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
+    </ul>
+    <p>&copy; <span id="year"></span> Clint Sipes — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
