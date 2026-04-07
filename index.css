@@ -170,6 +170,9 @@
 .wave-text span:nth-child(15) {
     animation-delay: 2.8s;
 }
+.wave-text span:nth-child(16) {
+    animation-delay: 3.0s;
+}
 
 @keyframes wave {
     0%, 100% {
